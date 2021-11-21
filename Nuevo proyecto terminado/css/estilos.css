@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+      
+}
+nav {
+    background: rgb(245, 63, 63);
+    height: 100px;
+    width: 100%;
+}
+.enlace {
+    position: absolute;
+    padding: 15px 50px;
+    
+    
+}
+
+.logo {
+    height: 70px;
+}
+
+
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    
+    
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background: rgb(252, 249, 249);
+    transition: 3s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+ .fondoIndex {
+    background: url(/Imagenes/1Modificada.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 100px);
+    
+}
+.fondoConocenos{
+    background: url(/Imagenes/conocenosModificada.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 100px);
+    margin-bottom: 20px;
+
+}
+.fondoContacto{
+    background: url(/Imagenes/contactoModificado.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 100px);
+}
+.galeria img{
+    width: 100%;
+    
+}
+.galeria .col-lg-4{
+    padding: 15px;
+    
+}
+.galeria img:hover{
+    border: 3px solid black;
+}
+
+.cartaServicios{
+    display: flex;
+}
+.h1-contacto{
+    margin-top: 20px;
+    margin-bottom:20px ;
+}
+.btn-contacto{
+    margin-bottom: 20px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(245, 63, 63);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+
+}
+.pie-pagina .grupo-1 .box h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:  black
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media (max-width:952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width:768px) {
+    .checkbtn {
+        display: block;
+
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(245, 63, 63);
+        top: 100px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover {
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+
+    }
+
+}
